@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Apply Montserrat font to the entire document */
+
+body {
+    margin: 0; /* Reset default margin */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    margin: 10px 0; /* Add space around the headers */
+  }
+
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .tiles-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 5px 0;
+    width: 500px;
+    height: 415px;
+    margin-bottom: 10px;
+  }
+  
+  .tile {
+    display: flex; /* Use Flexbox for positioning */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 75px;
+  }
+
+  /* Style for the Submit button */
+  #submitBtn {
+    display: block;
+    margin-top: 5px;
+    margin-left: auto; /* Align the button to the right */
+    margin-right: auto; /* Align the button to the left */
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #submitBtn:hover {
+    background-color: #45a049;
+  }
+
+  /* Style for selected tiles */
+.tile.selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Style for correctly selected tiles */
+.tile.correct {
+    background-color: yellow;
+    color: black;
+  }
+
+  
